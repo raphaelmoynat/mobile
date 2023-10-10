@@ -40,13 +40,19 @@ html body{
 }
 
 .carteTacos{
+    display: flex;
+    flex-direction: column;
     border: darkorange 2px solid;
     border-radius: 3%;
     margin-top: 1vh;
 }
+.description{
+    font-size: 2em;
+}
 
 .typo{
     font-family: 'Young Serif', serif;
+    font-size: 2.5em;
 }
 
 .img{
@@ -59,7 +65,6 @@ html body{
 
 .tacos1{
     background-image: url("img.png");
-
 }
 
 .description{
@@ -84,8 +89,13 @@ html body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 3em;
+        font-size: 2em;
     }
+
+    .logRaclette{
+        font-size: 2em;
+    }
+
     .navBar{
         padding-right: 10vw;
         padding-left: 10vw;
@@ -95,18 +105,26 @@ html body{
         text-decoration: none;
         color: white;
         margin-right: 10px;
+        font-family: 'Young Serif', serif;
     }
+
     .liens{
         display: block
     }
 
-    .cartes{
+    .carte{
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         align-items: center;
         padding-right: 10vw;
         padding-left: 10vw;
     }
+
+    .carteTacos{
+        margin-right: 15px;
+    }
+
 
     .menuBurger{
         display: none;
